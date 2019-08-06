@@ -1,0 +1,30 @@
+// nav {
+//     .nav();
+//     margin-top: 2%;
+
+//     a {
+//        .button();
+//     }
+// }
+
+.nav-container {
+    .tiny-view; // 500 px and less
+    
+    @media @phones { //500px and up
+        min-width: 100%;
+        .mobile-view;
+
+      }
+   
+    @media @tablets { //800 px and up
+        .maximum-width;
+        .tablet-view;     
+        
+      }
+
+      @media @desktop { //1000 pixels and up
+        .maximum-width;
+        .desktop-view;
+      }
+        
+}

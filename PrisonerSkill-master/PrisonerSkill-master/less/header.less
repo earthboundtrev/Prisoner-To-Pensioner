@@ -1,0 +1,21 @@
+// This is the styling for the header page. It is still to be determined whether this for all of the HTML pages of just the about ones
+
+.container-header {
+    .tiny-view-header; //For screens 500px and smaller
+    // background-image: url("../images/workbench.jpeg");
+    @media @phones {
+        .phone-view-header; // 500px and larger
+        // background-image: url("../images/workbench.jpeg");
+    }
+
+    @media @tablets { //800px and larger
+        .tablet-view-header;
+        // background-image: url("../images/workbench.jpeg");
+    }
+
+    @media @desktop { //1000px and larger
+        .desktop-view-header;
+        // background-image: url("../images/workbench.jpeg");
+    }
+
+}

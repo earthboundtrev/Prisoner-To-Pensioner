@@ -1,0 +1,183 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;    
+}
+
+.body h2 {
+    margin-top: 10%;
+}
+
+.body img {
+    width: 100%;
+}
+
+.grid {
+    .grids();
+
+    .grid-right {
+        .right();
+
+        img {
+            width: 30%;
+        }
+
+        h3 {
+            margin-top: 10%;
+        }
+
+        p {
+            margin-top: 10%;
+        }
+    }
+
+    .grid-left {
+        .left();
+
+        img {
+            width: 30%;
+        }
+
+        h3 {
+            margin-top: 10%;
+        }
+
+        p {
+            margin-top: 10%;
+        }
+    }
+}
+
+.grid2 {
+    .grids();
+    margin-bottom: 30%;
+
+    .grid-right {
+        .right();
+        border: 0;
+        padding: 0;
+
+        img {
+            width: 30%;
+        }
+
+        h3 {
+            margin-top: 10%;
+        }
+
+        p {
+            margin-top: 10%;
+        }
+    }
+
+    .grid-left {
+        .left();
+
+        img {
+            width: 30%;
+        }
+
+        h3 {
+            margin-top: 10%;
+        }
+
+        p {
+            margin-top: 10%;
+        }
+    }
+}
+
+@media @phones {
+    .grid {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10% 0 0 0;
+        padding: 0;
+        border: 0;
+
+        .grid-left {
+            border: 0;
+            margin: 10% 0 0 0;
+            padding: 0;
+            width: 100%;
+        }
+    
+        .grid-right {
+            border: 0;
+            margin: 10% 0 0 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .grid2 {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10% 0 10% 0;
+        padding: 0;
+        border: 0;
+
+        .grid-right {
+            border: 0;
+            margin: 10% 0 0 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+@media @tablets {
+    .grid {
+        flex-direction: row;
+
+        .grid-left {
+            .left();
+        }
+    
+        .grid-right {
+            .right();
+        }
+    }
+
+    .grid2 {
+        flex-direction: row;
+        
+        .grid-left {
+            .left();
+        }
+        
+        .grid-right {
+            .right();
+            border: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media @desktop {
+    .grid {
+
+        .grid-left {
+            .left();
+        }
+    
+        .grid-right {
+            .right();
+        }
+    }
+
+    .grid2 {
+        
+        .grid-left {
+            .left();
+        }
+        
+        .grid-right {
+            .right();
+            border: 0;
+            padding: 0;
+        }
+    }
+}
