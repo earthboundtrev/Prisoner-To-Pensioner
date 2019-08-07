@@ -1,0 +1,156 @@
+// This is the styling for the header page. It is still to be determined whether this for all of the HTML pages of just the about ones
+
+.container-header {
+    .tiny-view-header; //For screens 500px and smaller
+    @media @phones {
+        .phone-view-header; // 500px and larger
+    }
+
+    @media @tablets { //800px and larger
+        .tablet-view-header;
+    }
+
+    @media @desktop { //1000px and larger
+        .desktop-view-header;
+    }
+
+}
+
+//HEADER MIXINS
+
+.tiny-view-header {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/workbench.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .display-flex();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+        text-align: center;
+        color: #999999;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 2px 2px black;
+    }
+
+    h1 {
+        text-align: center;
+        color: #888888;
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 5px;
+        text-shadow: 2px 2px black
+    }
+
+    
+}
+
+.phone-view-header{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/workbench.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   .display-flex();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .intro {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+        text-align: center;
+        color: #999999;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 2px 2px black;
+    }
+
+    h1 {
+        text-align: center;
+        color: #888888;
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 5px;
+    }
+
+}
+
+// HEADER MIXINS
+
+.tablet-view-header{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/workbench.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .display-flex();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+        text-align: center;
+        color: #999999;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 2px 2px black;
+    }
+
+    h1 {
+        text-align: center;
+        color: #888888;
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 5px;
+    }
+}
+    .desktop-view-header{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/workbench.jpeg");
+    background-attachment:  scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .display-flex();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+        text-align: center;
+        color: #999999;
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 2px 2px black;
+    }
+
+    h1 {
+        text-align: center;
+        color: #888888;
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 5px;
+    }
+}
