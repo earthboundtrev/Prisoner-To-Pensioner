@@ -1,5 +1,3 @@
-// This is the styling for the About page
-
 .beginning-body {
 
     @media @phones {
@@ -24,6 +22,21 @@
     }
 }
 
+.about-trevor {
+    
+    margin-top: @five-percent-width;
+    .getWidth(@half-width);
+    border: 2px solid black;
+    margin-left: @quarter-width;
+    text-align: center;
+    padding: @two-percent-width;
+    
+    @media @phones{
+
+        margin-bottom: @five-percent-width;
+    }
+}
+
 .body-pieces {
 
     .body-designer();
@@ -44,7 +57,7 @@
 
     @media @desktop {
         .body-designer();
-        .getWidth(@half-width);
+        .getWidth(@third-width);
         .adapted-h3();
 
     } 

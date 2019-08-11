@@ -2,19 +2,19 @@
     .tiny-view; // 500 px and less
     
     @media @phones { //500px and up
-        min-width: 100%;
+        min-width: @maximum-width;
         .mobile-view;
 
       }
    
     @media @tablets { //800 px and up
-        .maximum-width;
+        .getWidth(@maximum-width);
         .tablet-view;     
         
       }
 
       @media @desktop { //1000 pixels and up
-        .maximum-width;
+        .getWidth(@maximum-width);
         .desktop-view;
       }
         
@@ -29,7 +29,7 @@
 
 .tiny-view {
   display: flex;
-  min-width: 100%;
+  min-width: @maximum-width;
   height: 80px;
   background-color: @header-footer-color;
   flex-flow: column-reverse;
@@ -150,7 +150,7 @@
       border-left: 1px solid black;
       border-right: 1px solid black;
       background-color: @header-footer-color;
-      width: 100%;
+      width: @maximum-width;
       padding: 15px;
 
       a {
