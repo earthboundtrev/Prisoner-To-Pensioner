@@ -8,14 +8,14 @@
     @media @tablets {
         .display-flex();
         flex-wrap: wrap;
-        margin-top: @five-percent-width;
-        margin-bottom: @five-percent-width;
+        margin-top: @five-percent;
+        margin-bottom: @five-percent;
     } 
 
     @media @desktop {
         .display-flex();
-        margin-top: @five-percent-width;
-        margin-bottom: @five-percent-width;
+        margin-top: @five-percent;
+        margin-bottom: @five-percent;
         flex-wrap: wrap;
         flex-direction: row;
 
@@ -23,26 +23,26 @@
 }
 
 .about-trevor {
-    margin-top: @five-percent-width;
-    border: 2px solid black;
-    margin-left: @quarter-width;
+    margin-top: @five-percent;
+    border: @small-button-border;
+    margin-left: @quarter-percent;
     text-align: center;
-    padding: @two-percent-width;
+    padding: @two-percent;
     
     @media @phones{
    
-        .getWidth(@quarter-width);
-        margin-bottom: @five-percent-width;
+        .getWidth(@quarter-percent);
+        margin-bottom: @five-percent;
     }
 
     @media @tablets {
-        .getWidth(@quarter-width);
-        margin-bottom: @two-percent-width;
+        .getWidth(@quarter-percent);
+        margin-bottom: @two-percent;
     }
 
     @media @desktop {
-        .getWidth(@half-width);
-        margin-bottom: @five-percent-width;
+        .getWidth(@half-percent);
+        margin-bottom: @five-percent;
     }
 }
 
@@ -50,11 +50,11 @@
 
     .body-designer();
     .adapted-h3();
-    .getWidth(@maximum-width);
+    .getWidth(@maximum-percent);
     //padding-bottom: @two-percent-width;
 
     @media @phones {
-        .getWidth(@maximum-width);
+        .getWidth(@maximum-percent);
         .adapted-h3();
         .body-designer();
     } 
@@ -62,12 +62,12 @@
     @media @tablets {
         .adapted-h3();
         .body-designer();
-        .getWidth(@maximum-width);
+        .getWidth(@maximum-percent);
     }
 
     @media @desktop {
         .body-designer();
-        .getWidth(@quarter-width);
+        .getWidth(@quarter-percent);
         .adapted-h3();
 
     } 
@@ -82,12 +82,12 @@
 }
 
 .body-designer {
-    padding-top: @five-percent-width;
+    padding-top: @five-percent;
     padding-left: 5px;
     padding-right: 5px;
-    border: 2px solid black;
-    padding-bottom: @five-percent-width;
-    margin-left: @five-percent-width;
+    border: @small-button-border;
+    padding-bottom: @five-percent;
+    margin-left: @five-percent;
 }
 
 .img-display {

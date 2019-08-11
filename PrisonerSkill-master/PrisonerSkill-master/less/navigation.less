@@ -2,19 +2,19 @@
     .tiny-view; // 500 px and less
     
     @media @phones { //500px and up
-        min-width: @maximum-width;
+        min-width: @maximum-percent;
         .mobile-view;
 
       }
    
     @media @tablets { //800 px and up
-        .getWidth(@maximum-width);
+        .getWidth(@maximum-percent);
         .tablet-view;     
         
       }
 
       @media @desktop { //1000 pixels and up
-        .getWidth(@maximum-width);
+        .getWidth(@maximum-percent);
         .desktop-view;
       }
         
@@ -29,8 +29,8 @@
 
 .tiny-view {
   display: flex;
-  min-width: @maximum-width;
-  height: 80px;
+  min-width: @maximum-percent;
+  height: @tenth-percent;
   background-color: @header-footer-color;
   flex-flow: column-reverse;
   justify-content: center;
@@ -43,7 +43,7 @@
       padding: 3px 5px 3px 5px;
       color: @txt-color;
       background-color: @bg-color;
-      border: 1px solid black;
+      border: @small-button-border;
       border-radius: 5px;
       font-weight: 700;
 
@@ -70,7 +70,7 @@
 
 .mobile-view {
       .display-flex();
-      height: @tenth-width;
+      height: @tenth-percent;
       background-color: @header-footer-color;
       flex-flow: column-reverse;
       justify-content: center;
@@ -83,7 +83,7 @@
           padding: 3px 5px 3px 5px;
           color: @txt-color;
           background-color: @bg-color;
-          border: 1px solid black;
+          border: @small-button-border;
           border-radius: 5px;
           font-weight: 700;
 
@@ -110,9 +110,7 @@
       flex-flow: row-reverse;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid black;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+      .navigation-border();
       background-color: @header-footer-color;
       padding: 15px;
 
@@ -146,11 +144,9 @@
       flex-flow: row-reverse;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid black;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+      .navigation-border();
       background-color: @header-footer-color;
-      width: @maximum-width;
+      width: @maximum-percent;
       padding: 15px;
 
       a {
