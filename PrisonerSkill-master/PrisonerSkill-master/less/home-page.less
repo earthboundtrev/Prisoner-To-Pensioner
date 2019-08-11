@@ -1,18 +1,16 @@
-// need to refactor this one, and change all of the variables names of this code. I think it will take a while to do this, but I don't
-// like the variable names
 .body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;    
+    margin-top: @five-percent-width;    
 }
 
 .body h2 {
-    margin-top: 10%;
+    margin-top: @tenth-width;
 }
 
 .body img {
-    width: 100%;
+    width: @maximum-width;
 }
 
 .grid {
@@ -22,15 +20,15 @@
         .right();
 
         img {
-            width: 30%;
+            width: @thirty-percent-width;
         }
 
         h3 {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
 
         p {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
     }
 
@@ -38,22 +36,22 @@
         .left();
 
         img {
-            width: 30%;
+            width: @thirty-percent-width;
         }
 
         h3 {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
 
         p {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
     }
 }
 
 .grid2 {
     .grids();
-    margin-bottom: 30%;
+    margin-bottom: @thirty-percent-width;
 
     .grid-right {
         .right();
@@ -61,15 +59,15 @@
         padding: 0;
 
         img {
-            width: 30%;
+            width: @thirty-percent-width;
         }
 
         h3 {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
 
         p {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
     }
 
@@ -77,15 +75,15 @@
         .left();
 
         img {
-            width: 30%;
+            width: @thirty-percent-width;
         }
 
         h3 {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
 
         p {
-            margin-top: 10%;
+            margin-top: @tenth-width;
         }
     }
 }
@@ -94,20 +92,20 @@
     .grid {
         flex-direction: column;
         justify-content: center;
-        margin: 10% 0 0 0;
+        margin: @tenth-width 0 0 0;
         padding: 0;
         border: 0;
 
         .grid-left {
             border: 0;
-            margin: 10% 0 0 0;
+            margin: @tenth-width 0 0 0;
             padding: 0;
             width: 100%;
         }
     
         .grid-right {
             border: 0;
-            margin: 10% 0 0 0;
+            margin: @tenth-width 0 0 0;
             padding: 0;
             width: 100%;
         }
@@ -116,15 +114,15 @@
     .grid2 {
         flex-direction: column;
         justify-content: center;
-        margin: 10% 0 10% 0;
+        margin: @tenth-width 0 @tenth-width 0;
         padding: 0;
         border: 0;
 
         .grid-right {
             border: 0;
-            margin: 10% 0 0 0;
+            margin: @tenth-width 0 0 0;
             padding: 0;
-            width: 100%;
+            width: @maximum-width;
         }
     }
 }

@@ -28,10 +28,10 @@
 
     .body-designer();
     .adapted-h3();
-    .maximum-width();
+    .getWidth(@maximum-width);
 
     @media @phones {
-        .maximum-width();
+        .getWidth(@maximum-width);
         .adapted-h3();
         .body-designer();
     } 
@@ -39,12 +39,12 @@
     @media @tablets {
         .adapted-h3();
         .body-designer();
-        .maximum-width();
+        .getWidth(@maximum-width);
     }
 
     @media @desktop {
         .body-designer();
-        .half-width();
+        .getWidth(@half-width);
         .adapted-h3();
 
     } 
