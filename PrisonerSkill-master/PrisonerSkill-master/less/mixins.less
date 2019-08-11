@@ -1,5 +1,3 @@
-// I'm unsure of exactly what should be in this file, perhaps just general mixins used by the code?
-
 .button() {
     display: flex;
     flex-direction: row;
@@ -27,7 +25,7 @@
 }
 
 .grids() {
-    display: flex;
+    .display-flex();
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -36,19 +34,19 @@
 }
 
 .right() {
-    display: flex;
+    .display-flex();
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    width: 45%;
+    width: @half-width;
     margin-top: @tenth-width;
     padding-right: @tenth-width;
     border-right: 1px solid black;
 }
 
 .left() {
-    display: flex;
+    .display-flex();
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
