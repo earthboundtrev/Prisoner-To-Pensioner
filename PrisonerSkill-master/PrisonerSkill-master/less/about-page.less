@@ -22,6 +22,24 @@
     }
 }
 
+.trevor-flexer {
+    .display-flex();
+
+    /*@media @phones {
+        flex-direction: row;
+    }
+
+    @media @tablets {
+
+        flex-direction: row;
+    }
+
+    @media @desktop {
+
+        flex-direction: row;
+    }*/
+}
+
 .about-trevor {
     margin-top: @five-percent;
     border: @small-button-border;
@@ -33,11 +51,13 @@
    
         .getWidth(@quarter-percent);
         margin-bottom: @five-percent;
+        margin-left: @thirty-percent;
     }
 
     @media @tablets {
         .getWidth(@quarter-percent);
         margin-bottom: @two-percent;
+        margin-left: @thirty-percent
     }
 
     @media @desktop {
@@ -51,7 +71,6 @@
     .body-designer();
     .adapted-h3();
     .getWidth(@maximum-percent);
-    //padding-bottom: @two-percent-width;
 
     @media @phones {
         .getWidth(@maximum-percent);
@@ -78,6 +97,7 @@
         padding-top: 10px;
         padding-bottom: 15px;
         text-align: center;
+        justify-items: space-evenly;
     }
 }
 
