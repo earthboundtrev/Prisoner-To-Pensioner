@@ -3,19 +3,19 @@
     
     @media @phones { //500px and up
         min-width: @maximum-percent;
-        .mobile-view;
+        .mobile-view();
 
       }
    
     @media @tablets { //800 px and up
         .getWidth(@maximum-percent);
-        .tablet-view;     
+        .tablet-view();     
         
       }
 
       @media @desktop { //1000 pixels and up
         .getWidth(@maximum-percent);
-        .desktop-view;
+        .desktop-view();
       }
         
 }
