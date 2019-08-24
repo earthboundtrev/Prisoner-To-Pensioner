@@ -13,7 +13,7 @@
     } 
 
     @media @desktop {
-        .display: flex;
+        display: flex;
         margin-top: @five-percent;
         margin-bottom: @five-percent;
         flex-wrap: wrap;
@@ -28,27 +28,31 @@
 
 .about-trevor {
     margin-top: @five-percent;
-    border: @small-button-border;
+    /*border: @small-button-border; */
     margin-left: @quarter-percent;
     text-align: center;
     padding: @two-percent;
     
     @media @phones{
    
-        .getWidth(@quarter-percent);
+        .getWidth(@half-percent);
         margin-bottom: @five-percent;
-        margin-left: @thirty-percent;
+        margin-left: @twenty-eight-percent;
+        border: 1px solid green;
     }
 
     @media @tablets {
-        .getWidth(@quarter-percent);
+        .getWidth(@half-percent);
         margin-bottom: @two-percent;
-        margin-left: @thirty-percent
+        margin-left: @twenty-eight-percent;
+        border: 1px solid red;
     }
 
     @media @desktop {
         .getWidth(@half-percent);
         margin-bottom: @five-percent;
+        margin-left: @twenty-percent;
+        border: 1px solid blue;
     }
 }
 
@@ -97,6 +101,6 @@
 }
 
 .img-display {
-    display: flex;
+     display: flex;
      justify-content: center;
 }

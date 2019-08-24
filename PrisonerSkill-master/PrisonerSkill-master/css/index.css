@@ -1,7 +1,3 @@
-.image-spacing-for-about {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 .navigation-border {
   border-bottom: 1px solid black;
   border-left: 1px solid black;
@@ -468,29 +464,38 @@ p {
     flex-direction: row;
   }
 }
+.trevor-flexer {
+  display: flex;
+}
 .about-trevor {
   margin-top: 5%;
-  border: 1px solid black;
+  /*border: @small-button-border; */
   margin-left: 25%;
   text-align: center;
   padding: 2%;
 }
 @media (min-width: 500px) {
   .about-trevor {
-    width: 25%;
+    width: 50%;
     margin-bottom: 5%;
+    margin-left: 28%;
+    border: 1px solid green;
   }
 }
 @media (min-width: 800px) {
   .about-trevor {
-    width: 25%;
+    width: 50%;
     margin-bottom: 2%;
+    margin-left: 28%;
+    border: 1px solid red;
   }
 }
 @media (min-width: 1000px) {
   .about-trevor {
     width: 50%;
     margin-bottom: 5%;
+    margin-left: 20%;
+    border: 1px solid blue;
   }
 }
 .body-pieces {
@@ -506,6 +511,7 @@ p {
   padding-top: 10px;
   padding-bottom: 15px;
   text-align: center;
+  justify-items: space-evenly;
 }
 @media (min-width: 500px) {
   .body-pieces {
@@ -521,6 +527,7 @@ p {
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
+    justify-items: space-evenly;
   }
 }
 @media (min-width: 800px) {
@@ -537,6 +544,7 @@ p {
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
+    justify-items: space-evenly;
   }
 }
 @media (min-width: 1000px) {
@@ -553,6 +561,7 @@ p {
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
+    justify-items: space-evenly;
   }
 }
 .body-designer {
@@ -795,10 +804,6 @@ p {
 .container-header {
   width: 100%;
   height: 62.5%;
-  background-image: url("../images/workbench.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -826,10 +831,6 @@ p {
   .container-header {
     width: 100%;
     height: 62.5%;
-    background-image: url("../images/workbench.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -857,10 +858,6 @@ p {
   .container-header {
     width: 100%;
     height: 62.5%;
-    background-image: url("../images/workbench.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -888,11 +885,6 @@ p {
   .container-header {
     width: 100%;
     height: 62.5%;
-    background-image: url("../images/workbench.jpeg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -919,10 +911,6 @@ p {
 .tiny-view-header {
   width: 100%;
   height: 62.5%;
-  background-image: url("../images/workbench.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -949,10 +937,6 @@ p {
 .phone-view-header {
   width: 100%;
   height: 62.5%;
-  background-image: url("../images/workbench.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -978,10 +962,6 @@ p {
 .tablet-view-header {
   width: 100%;
   height: 62.5%;
-  background-image: url("../images/workbench.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1007,11 +987,6 @@ p {
 .desktop-view-header {
   width: 100%;
   height: 62.5%;
-  background-image: url("../images/workbench.jpeg");
-  background-attachment: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
