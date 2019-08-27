@@ -436,6 +436,15 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.about-ray {
+  color: black;
+}
+.about-dalls {
+  color: black;
+}
+.about-aaron {
+  color: black;
+}
 .body {
   display: flex;
   align-items: center;

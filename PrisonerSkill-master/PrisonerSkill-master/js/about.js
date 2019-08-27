@@ -14,23 +14,33 @@ const aboutMeData = [
 
     {
         name: "Dallas",
-        description: "Web development student at Lambda School",
+        description: "Full Stack student at Lambda School",
         twitter: "twitter.com/lambdaschool",
         github: "github.com/dallas-james",
     },
 
     {
         name: "Aaron",
-        description: "Web development student at Lambda School",
+        description: "Full Stack student at Lambda School",
         twitter: "twitter.com/lambdaschool",
         github: "github.com/aaron-troska"
     }
 ];
 
-var aboutTrevor = document.addEventListener('click', () => {
+var aboutTrevor = document.querySelector('.about-trevor').addEventListener('click', () => {
+    
+    var filterFunction = aboutMeData.filter(element => {
 
-    let trevorTag = document.querySelector('.about-trevor');
+     if(element.description === "I'm Trevor. DMV area native. System Engineer, business man, and by father, by day, and Full Stack student at night");
+     {
+        return element.description;
+     }
 
+    });
+     console.log(filterFunction);
+});
+
+var aboutRay = document.querySelector('.about-ray').addEventListener('click', () => {
     
     var filterFunction = aboutMeData.filter(element => {
 
@@ -40,6 +50,22 @@ var aboutTrevor = document.addEventListener('click', () => {
      console.log(filterFunction);
 });
 
+var aboutDallas = document.querySelector('.about-dallas').addEventListener('click', () => {
+    
+    var filterFunction = aboutMeData.filter(element => {
 
-// Hmm, need to investigate how the event element is being reference because it looks like it 
-// Hmm, according to my research I should need this stuff to trigger displaying a text box, but I don't understand it, so I might do it this way.
+      return element.description;
+
+    });
+     console.log(filterFunction);
+});
+
+var aboutAaron = document.querySelector('.about-aaron').addEventListener('click', () => {
+    
+    var filterFunction = aboutMeData.filter(element => {
+
+      return element.description;
+
+    });
+     console.log(filterFunction);
+});
