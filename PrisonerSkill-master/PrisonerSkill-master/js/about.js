@@ -27,16 +27,17 @@ const aboutMeData = [
     }
 ];
 
-var aboutTrevor = document.addEventListener('click', (aboutMeData) => {
+var aboutTrevor = document.addEventListener('click', () => {
 
     let trevorTag = document.querySelector('.about-trevor');
+
     
-    var filterFunction = aboutMeData.filter = (element) => {
+    var filterFunction = aboutMeData.filter(element => {
 
-      console.log(element.description);
+      return element.description;
 
-    };
-    filterFunction(aboutMeData);
+    });
+     console.log(filterFunction);
 });
 
 
