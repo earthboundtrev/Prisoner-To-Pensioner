@@ -15,20 +15,23 @@
     width: @width;
 }
 
-.grids() {
+.custom-flex(@justify, @align) {
     display: flex;
+    justify-content: @justify;
+    align-items: @align;
+
+}
+
+.grids() {
+    .custom-flex(center, center);
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     margin-top: @tenth-percent;
 }
 
 .right() {
-    display: flex;
+    .custom-flex(flex-start, center);
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     text-align: center;
     width: @forty-five-percent;
     margin-top: @tenth-percent;
@@ -37,10 +40,8 @@
 }
 
 .left() {
-    display: flex;
+    .custom-flex(flex-end, center);
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     text-align: center;
     width: @forty-five-percent;
     margin-top: @tenth-percent;

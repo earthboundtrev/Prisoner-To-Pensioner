@@ -23,14 +23,14 @@
 }
 
 .trevor-flexer() {
-    display: flex;
+   .custom-flex(center, center);
 }
 
 .about-trevor() {
     margin-top: @five-percent;
-    margin-left: @quarter-percent;
-    text-align: center;
+    margin-left: @quarter-percent; 
     padding: @two-percent;
+    @border: @small-button-border;
     
     @media @phones{
    
@@ -55,15 +55,19 @@
     }
 }
 .about-ray {
-    color: black;
+    border: @small-button-border;
+    .custom-flex(center, center);
+
 }
 
-.about-dalls {
-   color: black;
+.about-dallas {
+   border: @small-button-border;
+   .custom-flex(center, center);
 }
 
 .about-aaron {
-   color: black;
+    border: @small-button-border;
+    .custom-flex(center, center);
 }
 
 .body-pieces() {
@@ -111,6 +115,5 @@
 }
 
 .img-display() {
-     display: flex;
-     justify-content: center;
+     .custom-flex(center, none);
 }

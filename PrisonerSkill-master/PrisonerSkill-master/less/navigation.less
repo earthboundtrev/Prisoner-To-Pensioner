@@ -26,13 +26,11 @@
 }
 
 .tiny-view {
-  display: flex;
+  .custom-flex(center, center);  
   min-width: @maximum-percent;
   height: @tenth-percent;
   background-color: @header-footer-color;
   flex-flow: column-reverse;
-  justify-content: center;
-  align-items: center;
   
   a {
       text-decoration: none;
@@ -65,12 +63,10 @@
 }
 
 .mobile-view {
-      display: flex;
+    .custom-flex(center, center);
       height: @tenth-percent;
       background-color: @header-footer-color;
       flex-flow: column-reverse;
-      justify-content: center;
-      align-items: center;
       
       a {
           text-decoration: none;
@@ -102,13 +98,11 @@
 }
 
 .tablet-view {
-      display: flex;
-      flex-flow: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      .navigation-border();
-      background-color: @header-footer-color;
-      padding: 15px;
+    .custom-flex(space-between, center);
+    flex-flow: row-reverse;
+    .navigation-border();
+    background-color: @header-footer-color;
+    padding: 15px;
 
       a {
           text-decoration: none;
@@ -136,10 +130,8 @@
 }
 
 .desktop-view {
-      display: flex;
+    .custom-flex(space-between, center);
       flex-flow: row-reverse;
-      justify-content: space-between;
-      align-items: center;
       .navigation-border();
       background-color: @header-footer-color;
       width: @maximum-percent;

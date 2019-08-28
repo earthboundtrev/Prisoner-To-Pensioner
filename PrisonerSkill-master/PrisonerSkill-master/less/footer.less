@@ -12,12 +12,10 @@
 // FOOTER MIXINS
 
 .tiny-view-footer {
-  display: flex;
+  .custom-flex(space-between, center);  
   min-width: @maximum-percent;
   height: @tenth-percent;
   background-color: @header-footer-color;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px;
 
   p {

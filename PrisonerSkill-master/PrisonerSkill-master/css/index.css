@@ -128,12 +128,12 @@ table {
 }
 .nav-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 100%;
   height: 10%;
   background-color: #a74949;
   flex-flow: column-reverse;
-  justify-content: center;
-  align-items: center;
 }
 .nav-container a {
   text-decoration: none;
@@ -163,11 +163,11 @@ table {
   .nav-container {
     min-width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10%;
     background-color: #a74949;
     flex-flow: column-reverse;
-    justify-content: center;
-    align-items: center;
   }
   .nav-container a {
     text-decoration: none;
@@ -198,9 +198,9 @@ table {
   .nav-container {
     width: 100%;
     display: flex;
-    flex-flow: row-reverse;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row-reverse;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -233,9 +233,9 @@ table {
 @media (min-width: 1000px) {
   .nav-container {
     display: flex;
-    flex-flow: row-reverse;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row-reverse;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -272,12 +272,12 @@ table {
 }
 .tiny-view {
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 100%;
   height: 10%;
   background-color: #a74949;
   flex-flow: column-reverse;
-  justify-content: center;
-  align-items: center;
 }
 .tiny-view a {
   text-decoration: none;
@@ -305,11 +305,11 @@ table {
 }
 .mobile-view {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10%;
   background-color: #a74949;
   flex-flow: column-reverse;
-  justify-content: center;
-  align-items: center;
 }
 .mobile-view a {
   text-decoration: none;
@@ -337,9 +337,9 @@ table {
 }
 .tablet-view {
   display: flex;
-  flex-flow: row-reverse;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row-reverse;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -370,9 +370,9 @@ table {
 }
 .desktop-view {
   display: flex;
-  flex-flow: row-reverse;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row-reverse;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -437,18 +437,27 @@ p {
   margin: 0 auto;
 }
 .about-ray {
-  color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-dalls {
-  color: black;
+.about-dallas {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-aaron {
-  color: black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 5%;
 }
 .body h2 {
@@ -459,17 +468,17 @@ p {
 }
 .grid {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   text-align: center;
   margin-top: 10%;
 }
 .grid .grid-right {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 45%;
   margin-top: 10%;
@@ -487,9 +496,9 @@ p {
 }
 .grid .grid-left {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 45%;
   margin-top: 10%;
@@ -506,18 +515,18 @@ p {
 }
 .grid2 {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 30%;
 }
 .grid2 .grid-right {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 45%;
   margin-top: 10%;
@@ -535,9 +544,9 @@ p {
 }
 .grid2 .grid-left {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 45%;
   margin-top: 10%;
@@ -582,9 +591,9 @@ p {
   }
   .grid .grid-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -592,9 +601,9 @@ p {
   }
   .grid .grid-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -606,9 +615,9 @@ p {
   }
   .grid2 .grid-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -616,9 +625,9 @@ p {
   }
   .grid2 .grid-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -629,9 +638,9 @@ p {
 @media (min-width: 1000px) {
   .grid .grid-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -639,9 +648,9 @@ p {
   }
   .grid .grid-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -650,9 +659,9 @@ p {
   }
   .grid2 .grid-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -660,9 +669,9 @@ p {
   }
   .grid2 .grid-right {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 45%;
     margin-top: 10%;
@@ -755,9 +764,9 @@ p {
     width: 100%;
     height: 62.5%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .container-header .intro {
     background: rgba(0, 0, 0, 0.7);
@@ -857,9 +866,9 @@ p {
   width: 100%;
   height: 62.5%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .desktop-view-header .intro {
   background: rgba(0, 0, 0, 0.7);
@@ -880,11 +889,11 @@ p {
 }
 .footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-width: 100%;
   height: 10%;
   background-color: #a74949;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -959,11 +968,11 @@ p {
 }
 .tiny-view-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-width: 100%;
   height: 10%;
   background-color: #a74949;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px;
 }
 .tiny-view-footer p {
