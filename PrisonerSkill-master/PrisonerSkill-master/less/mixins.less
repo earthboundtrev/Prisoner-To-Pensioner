@@ -1,8 +1,6 @@
 .button() {
-    display: flex;
+    .custom-flex(space-evenly, center);
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     color: @txt-color;
     text-decoration: none;
     width: @tenth-percent;
@@ -25,14 +23,12 @@
 .grids() {
     .custom-flex(center, center);
     flex-direction: row;
-    text-align: center;
     margin-top: @tenth-percent;
 }
 
 .right() {
     .custom-flex(flex-start, center);
     flex-direction: column;
-    text-align: center;
     width: @forty-five-percent;
     margin-top: @tenth-percent;
     padding-right: @tenth-percent;
@@ -42,14 +38,12 @@
 .left() {
     .custom-flex(flex-end, center);
     flex-direction: column;
-    text-align: center;
     width: @forty-five-percent;
     margin-top: @tenth-percent;
     padding-left: @tenth-percent;
 }
 
 .navigation-border() {
-
       border-bottom: @small-button-border;
       border-left: @small-button-border;
       border-right: @small-button-border;

@@ -471,7 +471,6 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  text-align: center;
   margin-top: 10%;
 }
 .grid .grid-right {
@@ -479,7 +478,6 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   width: 45%;
   margin-top: 10%;
   padding-right: 10%;
@@ -499,7 +497,6 @@ p {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   width: 45%;
   margin-top: 10%;
   padding-left: 10%;
@@ -518,7 +515,6 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  text-align: center;
   margin-top: 10%;
   margin-bottom: 30%;
 }
@@ -527,7 +523,6 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   width: 45%;
   margin-top: 10%;
   padding-right: 10%;
@@ -547,7 +542,6 @@ p {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   width: 45%;
   margin-top: 10%;
   padding-left: 10%;
@@ -594,7 +588,6 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-left: 10%;
@@ -604,7 +597,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-right: 10%;
@@ -618,7 +610,6 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-left: 10%;
@@ -628,7 +619,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-right: 10%;
@@ -641,7 +631,6 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-left: 10%;
@@ -651,7 +640,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-right: 10%;
@@ -662,7 +650,6 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-left: 10%;
@@ -672,7 +659,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 45%;
     margin-top: 10%;
     padding-right: 10%;
@@ -737,7 +723,6 @@ p {
     width: 100%;
     height: 62.5%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -841,7 +826,6 @@ p {
   width: 100%;
   height: 62.5%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
