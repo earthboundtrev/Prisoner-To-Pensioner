@@ -31,10 +31,13 @@ var aboutTrevor = document.querySelector('.about-trevor').addEventListener('clic
     
     var filterFunction = aboutMeData.filter(element => {
 
+        console.log(aboutMeData);
+
      if(element.description === "I'm Trevor. DMV area native. System Engineer, business man, and by father, by day, and Full Stack student at night");
      {
-        return element.description;
-     }
+        var trevorSelected = document.querySelector('.about-trevor');
+        trevorSelected.innerHTML = element.description;
+     } 
 
     });
      console.log(filterFunction);
