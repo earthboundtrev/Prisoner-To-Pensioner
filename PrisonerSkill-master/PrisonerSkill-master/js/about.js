@@ -47,7 +47,11 @@ var aboutRay = document.querySelector('.about-ray').addEventListener('click', ()
     
     var filterFunction = aboutMeData.filter(element => {
 
-      return element.description;
+     if(element.description === "Full Stack student at Lambda School");
+     {
+        var raySelected = document.querySelector('.about-ray');
+        raySelected.innerHTML = element.description;
+     } 
 
     });
      console.log(filterFunction);
@@ -57,17 +61,26 @@ var aboutDallas = document.querySelector('.about-dallas').addEventListener('clic
     
     var filterFunction = aboutMeData.filter(element => {
 
-      return element.description;
+     if(element.description === "Full Stack student at Lambda School");
+     {
+        var dallasSelected = document.querySelector('.about-dalls');
+        dallasSelected.innerHTML = element.description;
+     } 
 
     });
      console.log(filterFunction);
 });
 
-var aboutAaron = document.querySelector('.about-aaron').addEventListener('click', () => {
+var aboutRay = document.querySelector('.about-aaron').addEventListener('click', () => {
     
     var filterFunction = aboutMeData.filter(element => {
 
-      return element.description;
+
+     if(element.description === "Full Stack student at Lambda School");
+     {
+        var aaronSelected = document.querySelector('.about-ray');
+        aaronSelected.innerHTML = element.description;
+     } 
 
     });
      console.log(filterFunction);
