@@ -1,22 +1,20 @@
 .nav-container {
-    .tiny-view; // 500 px and less
-    
-    @media @phones { //500px and up
-        min-width: @maximum-percent;
-        .mobile-view();
+  .tiny-view; // 500 px and less
 
-      }
-   
-    @media @tablets { //800 px and up
-        .getWidth(@maximum-percent);
-        .tablet-view();     
-        
-      }
+  @media @phones {
+    min-width: @maximum-percent;
+    .mobile-view();
+  }
 
-      @media @desktop { //1000 pixels and up
-        .getWidth(@maximum-percent);
-        .desktop-view();
-      }
+  @media @tablets {
+    .getWidth(@maximum-percent);
+    .tablet-view();
+  }
+
+  @media @desktop {
+    .getWidth(@maximum-percent);
+    .desktop-view();
+  }
 }
 
 //NAV BAR mixins
@@ -26,138 +24,137 @@
 }
 
 .tiny-view {
-  .custom-flex(center, center);  
+  .custom-flex(center, center);
   min-width: @maximum-percent;
   height: @tenth-percent;
   background-color: @header-footer-color;
   flex-flow: column-reverse;
-  
+
   a {
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin: 5px;
-      padding: 3px 5px 3px 5px;
-      color: @txt-color;
-      background-color: @bg-color;
-      border: @small-button-border;
-      border-radius: 5px;
-      font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    color: @txt-color;
+    background-color: @bg-color;
+    border: @small-button-border;
+    border-radius: 5px;
+    font-weight: 700;
 
-      &:hover {
-          background-color: black;
-          color: white;
-          transition: 300ms;
-      }
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: 300ms;
+    }
 
-      &:active {
-          background-color: #666666;
-      }
+    &:active {
+      background-color: #666666;
+    }
   }
 
   .header-h1 {
-      margin-bottom: 15px;
-      font-size: 2.5rem;
-      font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
-
 }
 
 .mobile-view {
-    .custom-flex(center, center);
-      height: @tenth-percent;
-      background-color: @header-footer-color;
-      flex-flow: column-reverse;
-      
-      a {
-          text-decoration: none;
-          font-size: 1.5rem;
-          margin: 5px;
-          padding: 3px 5px 3px 5px;
-          color: @txt-color;
-          background-color: @bg-color;
-          border: @small-button-border;
-          border-radius: 5px;
-          font-weight: 700;
+  .custom-flex(center, center);
+  height: @tenth-percent;
+  background-color: @header-footer-color;
+  flex-flow: column-reverse;
 
-          &:hover {
-              background-color: darken(black, 5%);
-              color: white;
-              transition: 300ms;
-          }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    color: @txt-color;
+    background-color: @bg-color;
+    border: @small-button-border;
+    border-radius: 5px;
+    font-weight: 700;
 
-          &:active {
-              background-color: #666666;
-          }
-      }
+    &:hover {
+      background-color: darken(black, 5%);
+      color: white;
+      transition: 300ms;
+    }
 
-      .header-h1 {
-          margin-bottom: 15px;
-          font-size: 2.5rem;
-          font-weight: 600;
-      }
+    &:active {
+      background-color: #666666;
+    }
+  }
+
+  .header-h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
 }
 
 .tablet-view {
-    .custom-flex(space-between, center);
-    flex-flow: row-reverse;
-    .navigation-border();
-    background-color: @header-footer-color;
-    padding: 15px;
+  .custom-flex(space-between, center);
+  flex-flow: row-reverse;
+  .navigation-border();
+  background-color: @header-footer-color;
+  padding: 15px;
 
-      a {
-          text-decoration: none;
-          color: @txt-color;
-          font-weight: 700;
-          background-color: @bg-color;
-          padding: 10px;
-          margin: 15px;
-          border: 1px solid black;
-          border-radius: 15%;
-          transition: .25s;
-          &:hover {
-              background-color: black;
-              color: white;
-          }
-          &:active {
-             background-color: #666666;
-          }
-      }
+  a {
+    text-decoration: none;
+    color: @txt-color;
+    font-weight: 700;
+    background-color: @bg-color;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15%;
+    transition: 0.25s;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+    &:active {
+      background-color: #666666;
+    }
+  }
 
-      .header-h1 {
-          font-size: 2.5rem;
-          font-weight: 600;
-      }
+  .header-h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
 }
 
 .desktop-view {
-    .custom-flex(space-between, center);
-      flex-flow: row-reverse;
-      .navigation-border();
-      background-color: @header-footer-color;
-      width: @maximum-percent;
-      padding: 15px;
+  .custom-flex(space-between, center);
+  flex-flow: row-reverse;
+  .navigation-border();
+  background-color: @header-footer-color;
+  width: @maximum-percent;
+  padding: 15px;
 
-      a {
-          text-decoration: none;
-          color: @txt-color;
-          font-weight: 700;
-          background-color: @bg-color;
-          padding: 10px;
-          margin: 15px;
-          border: 1px solid black;
-          border-radius: 15%;
-          transition: .25s;
-          &:hover {
-              background-color: black;
-              color: white;
-          }
-          &:active {
-             background-color: #666666;
-          }
-      }
-
-      .header-h1 {
-          font-size: 2.5rem;
-          font-weight: 600;
-      }
+  a {
+    text-decoration: none;
+    color: @txt-color;
+    font-weight: 700;
+    background-color: @bg-color;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15%;
+    transition: 0.25s;
+    &:hover {
+      background-color: black;
+      color: white;
     }
+    &:active {
+      background-color: #666666;
+    }
+  }
+
+  .header-h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}

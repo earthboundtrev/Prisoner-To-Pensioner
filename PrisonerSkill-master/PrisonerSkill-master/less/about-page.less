@@ -1,118 +1,113 @@
 .beginning-body() {
+  @media @phones {
+    display: flex;
+    flex-direction: column;
+  }
 
-    @media @phones {
-        display: flex;
-        flex-direction: column;
-    }
+  @media @tablets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: @five-percent;
+    margin-bottom: @five-percent;
+  }
 
-    @media @tablets {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: @five-percent;
-        margin-bottom: @five-percent;
-    } 
-
-    @media @desktop {
-        display: flex;
-        margin-top: @five-percent;
-        margin-bottom: @five-percent;
-        flex-wrap: wrap;
-        flex-direction: row;
-
-    }
+  @media @desktop {
+    display: flex;
+    margin-top: @five-percent;
+    margin-bottom: @five-percent;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .trevor-flexer() {
-   .custom-flex(center, center);
-         
+  .custom-flex(center, center);
 }
 
 .about-trevor() {
-    margin-top: @five-percent;
-    margin-left: @quarter-percent; 
-    padding: @two-percent;
-    @border: @small-button-border;
-    
-    @media @phones{
-   
-        .getWidth(@half-percent);
-        margin-bottom: @five-percent;
-        margin-left: @twenty-eight-percent;
-        border: 1px solid green;
-    }
+  margin-top: @five-percent;
+  margin-left: @quarter-percent;
+  padding: @two-percent;
+  @border: @small-button-border;
 
-    @media @tablets {
-        .getWidth(@half-percent);
-        margin-bottom: @two-percent;
-        margin-left: @twenty-eight-percent;
-        border: 1px solid red;
-    }
+  @media @phones {
+    .getWidth(@half-percent);
+    margin-bottom: @five-percent;
+    margin-left: @twenty-eight-percent;
+    border: 1px solid green;
+  }
 
-    @media @desktop {
-        .getWidth(@half-percent);
-        margin-bottom: @five-percent;
-        margin-left: @twenty-percent;
-        border: 1px solid blue;
-    }
+  @media @tablets {
+    .getWidth(@half-percent);
+    margin-bottom: @two-percent;
+    margin-left: @twenty-eight-percent;
+    border: 1px solid red;
+  }
+
+  @media @desktop {
+    .getWidth(@half-percent);
+    margin-bottom: @five-percent;
+    margin-left: @twenty-percent;
+    border: 1px solid blue;
+  }
 }
 .about-ray {
-    border: @small-button-border;
-    .custom-flex(center, center);
+  border: @small-button-border;
+  .custom-flex(center, center);
 }
 
 .about-dallas {
-   border: @small-button-border;
-   .custom-flex(center, center);
+  border: @small-button-border;
+  .custom-flex(center, center);
 }
 
 .about-aaron {
-    border: @small-button-border;
-    .custom-flex(center, center);
+  border: @small-button-border;
+  .custom-flex(center, center);
 }
 
 .body-pieces() {
+  .body-designer();
+  .adapted-h3();
+  .getWidth(@maximum-percent);
 
-    .body-designer();
-    .adapted-h3();
+  @media @phones {
     .getWidth(@maximum-percent);
+    .adapted-h3();
+    .body-designer();
+  }
 
-    @media @phones {
-        .getWidth(@maximum-percent);
-        .adapted-h3();
-        .body-designer();
-    } 
+  @media @tablets {
+    .adapted-h3();
+    .body-designer();
+    .getWidth(@maximum-percent);
+  }
 
-    @media @tablets {
-        .adapted-h3();
-        .body-designer();
-        .getWidth(@maximum-percent);
-    }
-
-    @media @desktop {
-        .body-designer();
-        .getWidth(@quarter-percent);
-        .adapted-h3();
-    } 
+  @media @desktop {
+    .body-designer();
+    .getWidth(@quarter-percent);
+    .adapted-h3();
+  }
 }
 
-.adapted-h3(){
-    h3 {
-        padding-top: 10px;
-        padding-bottom: 15px;
-        text-align: center;
-        justify-items: space-evenly;
-    }
+.adapted-h3() {
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    justify-items: space-evenly;
+  }
 }
 
 .body-designer() {
-    padding-top: @five-percent;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: @small-button-border;
-    padding-bottom: @five-percent;
-    margin-left: @five-percent;
+  padding-top: @five-percent;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: @small-button-border;
+  padding-bottom: @five-percent;
+  margin-left: @five-percent;
 }
 
 .img-display() {
-     .custom-flex(center, none);
+  .custom-flex(center, none);
 }

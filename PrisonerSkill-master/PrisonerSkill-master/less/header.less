@@ -1,128 +1,126 @@
 .container-header {
-    .tiny-view-header; //For screens 500px and smaller
-    @media @phones {
-        .phone-view-header; // 500px and larger
-    }
+  .tiny-view-header; //For screens 500px and smaller
+  @media @phones {
+    .phone-view-header;
+  }
 
-    @media @tablets { //800px and larger
-        .tablet-view-header;
-    }
+  @media @tablets {
+    .tablet-view-header;
+  }
 
-    @media @desktop { //1000px and larger
-        .desktop-view-header;
-    }
+  @media @desktop {
+    .desktop-view-header;
+  }
 }
 
 //HEADER MIXINS
 
 .tiny-view-header {
-    width: @maximum-percent;
-    height: @over-half-percent;
-    .custom-flex(center, center);
-    flex-direction: column;
+  width: @maximum-percent;
+  height: @over-half-percent;
+  .custom-flex(center, center);
+  flex-direction: column;
 
-    .intro {
-        background: rgba(0, 0, 0, 0.7);
-    }
+  .intro {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-    p {
-        text-align: center;
-        color: @darker-gray;
-        font-weight: 700;
-        font-size: 3rem;
-        text-shadow: 2px 2px black;
-    }
+  p {
+    text-align: center;
+    color: @darker-gray;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+  }
 
-    h1 {
-        text-align: center;
-        color: @lighter-gray;
-        font-weight: 700;
-        font-size: 4rem;
-        margin-top: 5px;
-        text-shadow: 2px 2px black
-    }
-    
+  h1 {
+    text-align: center;
+    color: @lighter-gray;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5px;
+    text-shadow: 2px 2px black;
+  }
 }
 
 .phone-view-header {
-    width: @maximum-percent;
-    height: @over-half-percent;
-    .custom-flex(center, center);
-    flex-direction: column;
+  width: @maximum-percent;
+  height: @over-half-percent;
+  .custom-flex(center, center);
+  flex-direction: column;
 
-    .intro {
-        background: rgba(0, 0, 0, 0.7);
-    }
+  .intro {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-    p {
-        text-align: center;
-        color: @darker-gray;
-        font-weight: 700;
-        font-size: 3rem;
-        text-shadow: 2px 2px black;
-    }
+  p {
+    text-align: center;
+    color: @darker-gray;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+  }
 
-    h1 {
-        text-align: center;
-        color: @lighter-gray;
-        font-weight: 700;
-        font-size: 4rem;
-        margin-top: 5px;
-    }
-
+  h1 {
+    text-align: center;
+    color: @lighter-gray;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5px;
+  }
 }
 
 // HEADER MIXINS
 
 .tablet-view-header {
-    width: @maximum-percent;
-    height: @over-half-percent;
-    .custom-flex(center, center);
+  width: @maximum-percent;
+  height: @over-half-percent;
+  .custom-flex(center, center);
 
-    .intro {
-        background: rgba(0, 0, 0, 0.7);
-    }
+  .intro {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-    p {
-        text-align: center;
-        color: @darker-gray;
-        font-weight: 700;
-        font-size: 3rem;
-        text-shadow: 2px 2px black;
-    }
+  p {
+    text-align: center;
+    color: @darker-gray;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+  }
 
-    h1 {
-        text-align: center;
-        color: @lighter-gray;
-        font-weight: 700;
-        font-size: 4rem;
-        margin-top: 5px;
-    }
+  h1 {
+    text-align: center;
+    color: @lighter-gray;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5px;
+  }
 }
 
 .desktop-view-header {
-    width: @maximum-percent;
-    height: @over-half-percent;
-    .custom-flex(center, center);
-    flex-direction: column;
+  width: @maximum-percent;
+  height: @over-half-percent;
+  .custom-flex(center, center);
+  flex-direction: column;
 
-    .intro {
-        background: rgba(0, 0, 0, 0.7);
-    }
+  .intro {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-    p {
-        text-align: center;
-        color: @darker-gray;
-        font-weight: 700;
-        font-size: 3rem;
-        text-shadow: 2px 2px black;
-    }
+  p {
+    text-align: center;
+    color: @darker-gray;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+  }
 
-    h1 {
-        text-align: center;
-        color: @lighter-gray;
-        font-weight: 700;
-        font-size: 4rem;
-        margin-top: 5px;
-    }
+  h1 {
+    text-align: center;
+    color: @lighter-gray;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5px;
+  }
 }

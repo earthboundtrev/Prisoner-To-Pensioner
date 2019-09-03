@@ -1,78 +1,78 @@
 .footer-container {
-    .tiny-view-footer;
-    border-left: @small-button-border;
-    border-right: @small-button-border;
-    border-top: @small-button-border;
+  .tiny-view-footer;
+  border-left: @small-button-border;
+  border-right: @small-button-border;
+  border-top: @small-button-border;
 
-    @media @tablets{
-        .tablet-view-footer;
-    }
+  @media @tablets {
+    .tablet-view-footer;
+  }
 }
 
 // FOOTER MIXINS
 
 .tiny-view-footer {
-  .custom-flex(space-between, center);  
+  .custom-flex(space-between, center);
   min-width: @maximum-percent;
   height: @tenth-percent;
   background-color: @header-footer-color;
   padding: 15px;
 
   p {
-      font-weight: 700;
-      font-size: 1em;
+    font-weight: 700;
+    font-size: 1em;
   }
-  
+
   a {
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin: 5px 10px;
-      padding: 3px 5px 3px 5px;
-      color: @txt-color;
-      background-color: @bg-color;
-      border: @small-button-border;
-      border-radius: 5px;
-      font-weight: 700; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    padding: 3px 5px 3px 5px;
+    color: @txt-color;
+    background-color: @bg-color;
+    border: @small-button-border;
+    border-radius: 5px;
+    font-weight: 700;
 
-      &:hover {
-          background-color: black;
-          color: white;
-          transition: 300ms;
-      }
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: 300ms;
+    }
 
-      &:active {
-          background-color: #666666;
-      }
+    &:active {
+      background-color: #666666;
+    }
   }
 
   .fa {
-      padding: 5px;
+    padding: 5px;
   }
 }
 
 .tablet-view-footer {
   p {
-      font-weight: 700;
-      font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 
   a {
-      text-decoration: none;
-      font-size: 1.5rem;
-      margin: 5px 10px;
-      padding: 3px 5px 3px 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    padding: 3px 5px 3px 5px;
 
-      &:hover {
-          background-color: black;
-          color: white;
-          transition: 300ms;
-      }
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: 300ms;
+    }
 
-      &:active {
-          background-color: #666666;
-      }
+    &:active {
+      background-color: #666666;
+    }
 
-  .fa {
+    .fa {
       padding: 15px;
       font-size: 2rem;
       width: @five-percent;
@@ -80,24 +80,22 @@
       text-decoration: none;
       margin: 5px 2px;
       opacity: 0.7;
-      
     }
 
     .fa-github {
-        color: @social-logo-color;
+      color: @social-logo-color;
     }
-  
+
     .fa-facebook {
-        color: @social-logo-color;
+      color: @social-logo-color;
     }
 
     .fa-twitter {
-        color: @social-logo-color;
+      color: @social-logo-color;
     }
 
     .fa-linkedin {
-        color: @social-logo-color;
+      color: @social-logo-color;
     }
-}
-
+  }
 }
