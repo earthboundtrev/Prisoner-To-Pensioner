@@ -1,7 +1,7 @@
 const aboutMeData = [
     {
         name: "Trevor",
-        description: "I'm Trevor. DMV area native. System Engineer, business man, and by father, by day, and Full Stack student at night",
+        description: "I'm Trevor. DMV area native. System Engineer, business man, and by father, by day, and Full Stack student at night.",
         twitter:"twitter.com/earthboundtrev",
         github: "github.com/tthompson2",
     },
@@ -29,59 +29,33 @@ const aboutMeData = [
 
 var aboutTrevor = document.querySelector('.about-trevor').addEventListener('click', () => {
     
-    var filterFunction = aboutMeData.filter(element => {
-
-        console.log(aboutMeData);
-
-     if(element.description === "I'm Trevor. DMV area native. System Engineer, business man, and by father, by day, and Full Stack student at night");
-     {
-        var trevorSelected = document.querySelector('.about-trevor');
-        trevorSelected.innerHTML = element.description;
-     } 
-
-    });
-     console.log(filterFunction);
+    var tempTrevor = document.querySelector('.about-trevor');
+    tempTrevor.innerHTML = aboutMeData[0].description;
+    tempTrevor.style.color = "red";
+    tempTrevor.style.fontSize = "x-large";
+    tempTrevor.style.textAlign = "center";
 });
 
 var aboutRay = document.querySelector('.about-ray').addEventListener('click', () => {
     
-    var filterFunction = aboutMeData.filter(element => {
-
-     if(element.description === "Full Stack student at Lambda School");
-     {
-        var raySelected = document.querySelector('.about-ray');
-        raySelected.innerHTML = element.description;
-     } 
-
-    });
-     console.log(filterFunction);
+    var tempRay = document.querySelector('.about-ray');
+    tempRay.innerHTML = aboutMeData[1].description;
+    tempRay.style.fontSize = "x-large";
+    tempRay.style.textAlign = "center";
 });
 
 var aboutDallas = document.querySelector('.about-dallas').addEventListener('click', () => {
     
-    var filterFunction = aboutMeData.filter(element => {
-
-     if(element.description === "Full Stack student at Lambda School");
-     {
-        var dallasSelected = document.querySelector('.about-dalls');
-        dallasSelected.innerHTML = element.description;
-     } 
-
-    });
-     console.log(filterFunction);
+    var tempDallas = document.querySelector('.about-dallas');
+    tempDallas.innerHTML = aboutMeData[2].description;
+    tempDallas.style.fontSize = "x-large";
+    tempDallas.style.textAlign = "center";
 });
 
-var aboutRay = document.querySelector('.about-aaron').addEventListener('click', () => {
+var aboutAaron = document.querySelector('.about-aaron').addEventListener('click', () => {
     
-    var filterFunction = aboutMeData.filter(element => {
-
-
-     if(element.description === "Full Stack student at Lambda School");
-     {
-        var aaronSelected = document.querySelector('.about-ray');
-        aaronSelected.innerHTML = element.description;
-     } 
-
-    });
-     console.log(filterFunction);
+    var tempAaron = document.querySelector('.about-aaron');
+    tempAaron.innerHTML = aboutMeData[3].description;
+    tempAaron.style.fontSize = "x-large";
+    tempAaron.style.textAlign = "center";
 });

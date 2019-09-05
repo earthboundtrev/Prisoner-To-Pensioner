@@ -20,6 +20,27 @@
   }
 }
 
+.social-media {
+    a {
+        text-decoration: none;
+        color: @txt-color;
+        font-weight: 700;
+        background-color: @bg-color;
+        padding: 15px;
+        margin: 60px;
+        border: 1px solid black;
+        border-radius: 15%;
+        transition: 0.25s;
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+        &:active {
+          background-color: #666666;
+        }
+      }
+}
+
 .trevor-flexer() {
   .custom-flex(center, center);
 }
@@ -109,5 +130,5 @@
 }
 
 .img-display() {
-  .custom-flex(center, none);
+  .custom-flex(center, center);
 }
