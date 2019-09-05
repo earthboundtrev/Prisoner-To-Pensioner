@@ -21,24 +21,7 @@
 }
 
 .social-media {
-    a {
-        text-decoration: none;
-        color: @txt-color;
-        font-weight: 700;
-        background-color: @bg-color;
-        padding: 15px;
-        margin: 60px;
-        border: 1px solid black;
-        border-radius: 15%;
-        transition: 0.25s;
-        &:hover {
-          background-color: black;
-          color: white;
-        }
-        &:active {
-          background-color: #666666;
-        }
-      }
+    .media-button-styler(15px);
 }
 
 .trevor-flexer() {
@@ -46,10 +29,14 @@
 }
 
 .about-trevor() {
-  margin-top: @five-percent;
+  margin-top: @ten-percent;
   margin-left: @quarter-percent;
-  padding: @two-percent;
+  padding: @five-percent;
   @border: @small-button-border;
+
+  h3 {
+    text-align: center;
+  }
 
   @media @phones {
     .getWidth(@half-percent);
@@ -71,6 +58,7 @@
     margin-left: @twenty-percent;
     border: 1px solid blue;
   }
+
 }
 .about-ray {
   border: @small-button-border;

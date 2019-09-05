@@ -46,3 +46,24 @@
   border-left: @small-button-border;
   border-right: @small-button-border;
 }
+
+.media-button-styler(@padding) {
+    a {
+        text-decoration: none;
+        color: @txt-color;
+        font-weight: 700;
+        background-color: @bg-color;
+        padding: @padding;
+        margin: 15px;
+        border: 1px solid black;
+        border-radius: 15%;
+        transition: 0.25s;
+        &:hover {
+          background-color: black;
+          color: @white;
+        }
+        &:active {
+          background-color: @logo-font-color;
+        }
+      }
+}

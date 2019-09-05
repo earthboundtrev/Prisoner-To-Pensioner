@@ -220,7 +220,7 @@ table {
   }
   .nav-container a:hover {
     background-color: black;
-    color: white;
+    color: #FFFFFF;
   }
   .nav-container a:active {
     background-color: #666666;
@@ -359,7 +359,7 @@ table {
 }
 .tablet-view a:hover {
   background-color: black;
-  color: white;
+  color: #FFFFFF;
 }
 .tablet-view a:active {
   background-color: #666666;
@@ -442,14 +442,14 @@ p {
   font-weight: 700;
   background-color: #FFFFFF;
   padding: 15px;
-  margin: 60px;
+  margin: 15px;
   border: 1px solid black;
   border-radius: 15%;
   transition: 0.25s;
 }
 .social-media a:hover {
   background-color: black;
-  color: white;
+  color: #FFFFFF;
 }
 .social-media a:active {
   background-color: #666666;
