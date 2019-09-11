@@ -1,3 +1,17 @@
+.header-h1-mixin {
+  text-align: center;
+  color: #888888;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 5px;
+}
+.header-p-mixin {
+  text-align: center;
+  color: #999999;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -707,7 +721,6 @@ p {
   font-weight: 700;
   font-size: 4rem;
   margin-top: 5px;
-  text-shadow: 2px 2px black;
 }
 @media (min-width: 500px) {
   .container-header {
@@ -813,7 +826,6 @@ p {
   font-weight: 700;
   font-size: 4rem;
   margin-top: 5px;
-  text-shadow: 2px 2px black;
 }
 .phone-view-header {
   width: 100%;
