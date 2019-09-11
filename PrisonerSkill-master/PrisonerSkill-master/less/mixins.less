@@ -83,3 +83,39 @@
     font-size: 3rem;
     text-shadow: 2px 2px black;
 }
+
+.flex-with-direction(@direction, @wrap) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;    
+}
+
+.adapted-h3() {
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    justify-items: space-evenly;
+  }
+}
+
+.body-designer() {
+  padding-top: @five-percent;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: @small-button-border;
+  padding-bottom: @five-percent;
+  margin-left: @five-percent;
+}
+
+.a-mixin {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    color: @txt-color;
+    background-color: @bg-color;
+    border: @small-button-border;
+    border-radius: 5px;
+    font-weight: 700;
+}

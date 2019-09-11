@@ -1,22 +1,18 @@
 .beginning-body() {
   @media @phones {
-    display: flex;
-    flex-direction: column;
+    .flex-with-direction(column, none);
   }
 
   @media @tablets {
-    display: flex;
-    flex-wrap: wrap;
+    .flex-with-direction(row, wrap);
     margin-top: @five-percent;
     margin-bottom: @five-percent;
   }
 
   @media @desktop {
-    display: flex;
+    .flex-with-direction(row, wrap);  
     margin-top: @five-percent;
     margin-bottom: @five-percent;
-    flex-wrap: wrap;
-    flex-direction: row;
   }
 }
 
@@ -97,24 +93,6 @@
     .getWidth(@quarter-percent);
     .adapted-h3();
   }
-}
-
-.adapted-h3() {
-  h3 {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    text-align: center;
-    justify-items: space-evenly;
-  }
-}
-
-.body-designer() {
-  padding-top: @five-percent;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: @small-button-border;
-  padding-bottom: @five-percent;
-  margin-left: @five-percent;
 }
 
 .img-display() {
