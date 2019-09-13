@@ -931,7 +931,7 @@ p {
 .footer-container a {
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 3px 5px 3px 5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -1007,7 +1007,7 @@ p {
 .tiny-view-footer a {
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 5px 10px;
+  margin: 5px;
   padding: 3px 5px 3px 5px;
   color: #000000;
   background-color: #FFFFFF;
