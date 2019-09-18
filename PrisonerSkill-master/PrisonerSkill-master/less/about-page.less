@@ -4,15 +4,11 @@
   }
 
   @media @tablets {
-    .flex-with-direction(row, wrap);
-    margin-top: @five-percent;
-    margin-bottom: @five-percent;
-  }
+    .about-body-mixin(@five-percent, @five-percent);
+    }
 
   @media @desktop {
-    .flex-with-direction(row, wrap);  
-    margin-top: @five-percent;
-    margin-bottom: @five-percent;
+    .about-body-mixin(@five-percent, @five-percent);
   }
 }
 
@@ -35,23 +31,17 @@
   }
 
   @media @phones {
-    .getWidth(@half-percent);
-    margin-bottom: @five-percent;
-    margin-left: @twenty-eight-percent;
+    .about-device-styler(@half-percent, @five-percent, @twenty-eight-percent);
     border: 1px solid green;
   }
 
   @media @tablets {
-    .getWidth(@half-percent);
-    margin-bottom: @two-percent;
-    margin-left: @twenty-eight-percent;
+    .about-device-styler(@half-percent, @five-percent, @twenty-eight-percent);
     border: 1px solid red;
   }
 
   @media @desktop {
-    .getWidth(@half-percent);
-    margin-bottom: @five-percent;
-    margin-left: @twenty-percent;
+    .about-device-styler(@half-percent, @five-percent, @twenty-percent);
     border: 1px solid blue;
   }
 

@@ -119,3 +119,14 @@
     border-radius: 5px;
     font-weight: 700;
 }
+.about-body-mixin(@margin-top, @margin-botton) {
+   .flex-with-direction(row, wrap);
+   margin-top: @margin-top;
+   margin-bottom: @margin-bottom;
+}
+
+.about-device-styler(@width, @margin-bottom, @margin-left) {
+  .getWidth(@width);
+  margin-bottom: @margin-bottom;
+  margin-left: @margin-left;
+}
