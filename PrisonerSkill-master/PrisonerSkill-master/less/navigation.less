@@ -31,7 +31,7 @@
   flex-flow: column-reverse;
 
   a {
-    .a-mixin();
+    .a-mixin(red);
 
     &:hover {
       background-color: black;
@@ -59,7 +59,7 @@
   flex-flow: column-reverse;
 
   a {
-    .a-mixin();
+    .a-mixin(red);
 
     &:hover {
       background-color: darken(black, 5%);
@@ -104,7 +104,7 @@
 
   a {
     text-decoration: none;
-    color: @txt-color;
+    color: @default-txt-color;
     font-weight: 700;
     background-color: @bg-color;
     padding: 10px;

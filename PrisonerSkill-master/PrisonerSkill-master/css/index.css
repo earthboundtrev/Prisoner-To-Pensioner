@@ -12,16 +12,8 @@
   font-size: 3rem;
   text-shadow: 2px 2px black;
 }
-.a-mixin {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 3px 5px 3px 5px;
-  color: #000000;
-  background-color: #FFFFFF;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: 700;
+.align-left {
+  text-align: left;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -162,10 +154,11 @@ table {
 }
 .nav-container a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
-  color: #000000;
+  padding-bottom: 2%;
+  color: red;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
@@ -183,6 +176,7 @@ table {
   margin-bottom: 15px;
   font-size: 2.5rem;
   font-weight: 600;
+  text-align: left;
 }
 @media (min-width: 500px) {
   .nav-container {
@@ -196,10 +190,11 @@ table {
   }
   .nav-container a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 5px;
     padding: 3px 5px 3px 5px;
-    color: #000000;
+    padding-bottom: 2%;
+    color: red;
     background-color: #FFFFFF;
     border: 1px solid black;
     border-radius: 5px;
@@ -236,9 +231,12 @@ table {
     text-decoration: none;
     color: #000000;
     font-weight: 700;
+    font-size: 2.5rem;
     background-color: #FFFFFF;
     padding: 10px;
-    margin: 15px;
+    margin-right: 15%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 15%;
     transition: 0.25s;
@@ -274,6 +272,7 @@ table {
     font-weight: 700;
     background-color: #FFFFFF;
     padding: 10px;
+    padding-bottom: 2%;
     margin: 15px;
     border: 1px solid black;
     border-radius: 15%;
@@ -306,10 +305,11 @@ table {
 }
 .tiny-view a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
-  color: #000000;
+  padding-bottom: 2%;
+  color: red;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
@@ -327,6 +327,7 @@ table {
   margin-bottom: 15px;
   font-size: 2.5rem;
   font-weight: 600;
+  text-align: left;
 }
 .mobile-view {
   display: flex;
@@ -338,10 +339,11 @@ table {
 }
 .mobile-view a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
-  color: #000000;
+  padding-bottom: 2%;
+  color: red;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
@@ -375,9 +377,12 @@ table {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
+  font-size: 2.5rem;
   background-color: #FFFFFF;
   padding: 10px;
-  margin: 15px;
+  margin-right: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: 1px solid black;
   border-radius: 15%;
   transition: 0.25s;
@@ -411,6 +416,7 @@ table {
   font-weight: 700;
   background-color: #FFFFFF;
   padding: 10px;
+  padding-bottom: 2%;
   margin: 15px;
   border: 1px solid black;
   border-radius: 15%;
@@ -683,10 +689,11 @@ p {
 }
 .footer-container a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
-  color: #000000;
+  padding-bottom: 2%;
+  color: red;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
@@ -731,18 +738,6 @@ p {
     margin: 5px 2px;
     opacity: 0.7;
   }
-  .footer-container a .fa-github {
-    color: black;
-  }
-  .footer-container a .fa-facebook {
-    color: black;
-  }
-  .footer-container a .fa-twitter {
-    color: black;
-  }
-  .footer-container a .fa-linkedin {
-    color: black;
-  }
 }
 .tiny-view-footer {
   display: flex;
@@ -759,10 +754,11 @@ p {
 }
 .tiny-view-footer a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 5px;
   padding: 3px 5px 3px 5px;
-  color: #000000;
+  padding-bottom: 2%;
+  color: red;
   background-color: #FFFFFF;
   border: 1px solid black;
   border-radius: 5px;
@@ -806,18 +802,6 @@ p {
   margin: 5px 2px;
   opacity: 0.7;
 }
-.tablet-view-footer a .fa-github {
-  color: black;
-}
-.tablet-view-footer a .fa-facebook {
-  color: black;
-}
-.tablet-view-footer a .fa-twitter {
-  color: black;
-}
-.tablet-view-footer a .fa-linkedin {
-  color: black;
-}
 .body {
   display: flex;
   justify-content: center;
@@ -830,212 +814,16 @@ p {
 .body img {
   width: 100%;
 }
-.grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 10%;
-}
-.grid .grid-right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 45%;
-  margin-top: 10%;
-  padding-right: 10%;
-  border-right: 1px solid black;
-}
-.grid .grid-right img {
-  width: 30%;
-}
-.grid .grid-right h3 {
-  margin-top: 10%;
-}
-.grid .grid-right p {
-  margin-top: 10%;
-}
-.grid .grid-left {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  width: 45%;
-  margin-top: 10%;
-  padding-left: 10%;
-}
-.grid .grid-left img {
-  width: 30%;
-}
-.grid .grid-left h3 {
-  margin-top: 10%;
-}
-.grid .grid-left p {
-  margin-top: 10%;
-}
-.grid2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 10%;
-  margin-bottom: 30%;
-}
-.grid2 .grid-right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 45%;
-  margin-top: 10%;
-  padding-right: 10%;
-  border-right: 1px solid black;
-}
-.grid2 .grid-right img {
-  width: 30%;
-}
-.grid2 .grid-right h3 {
-  margin-top: 10%;
-}
-.grid2 .grid-right p {
-  margin-top: 10%;
-}
-.grid2 .grid-left {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  width: 45%;
-  margin-top: 10%;
-  padding-left: 10%;
-}
-.grid2 .grid-left img {
-  width: 30%;
-}
-.grid2 .grid-left h3 {
-  margin-top: 10%;
-}
-.grid2 .grid-left p {
-  margin-top: 10%;
-}
-@media (min-width: 500px) {
-  .grid {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10%;
-  }
-  .grid .grid-left {
-    margin-top: 10%;
-    width: 100%;
-  }
-  .grid .grid-right {
-    margin-top: 10%;
-    width: 100%;
-  }
-  .grid2 {
-    flex-direction: column;
-    justify-content: center;
-    margin: 10% 0 10% 0;
-  }
-  .grid2 .grid-right {
-    margin-top: 10%;
-    width: 100%;
-  }
-}
-@media (min-width: 800px) {
-  .grid {
-    flex-direction: row;
-  }
-  .grid .grid-left {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-left: 10%;
-  }
-  .grid .grid-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-right: 10%;
-    border-right: 1px solid black;
-  }
-  .grid2 {
-    flex-direction: row;
-  }
-  .grid2 .grid-left {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-left: 10%;
-  }
-  .grid2 .grid-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-right: 10%;
-    border-right: 1px solid black;
-  }
-}
-@media (min-width: 1000px) {
-  .grid .grid-left {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-left: 10%;
-  }
-  .grid .grid-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-right: 10%;
-    border-right: 1px solid black;
-  }
-  .grid2 .grid-left {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-left: 10%;
-  }
-  .grid2 .grid-right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 10%;
-    padding-right: 10%;
-    border-right: 1px solid black;
-  }
-}
 .social-media a {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
+  font-size: 2.5rem;
   background-color: #FFFFFF;
   padding: 15px;
-  margin: 15px;
+  margin-right: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: 1px solid black;
   border-radius: 15%;
   transition: 0.25s;
@@ -1064,4 +852,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.p-formater p {
+  font-size: 2.5rem;
 }
