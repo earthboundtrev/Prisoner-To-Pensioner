@@ -54,7 +54,8 @@
         font-weight: 700;
         background-color: @bg-color;
         padding: @padding;
-        margin: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         border: 1px solid black;
         border-radius: 15%;
         transition: 0.25s;
@@ -110,9 +111,10 @@
 
 .a-mixin {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 5px;
     padding: 3px 5px 3px 5px;
+    padding-bottom: @two-percent;
     color: @txt-color;
     background-color: @bg-color;
     border: @small-button-border;
@@ -129,4 +131,8 @@
   .getWidth(@width);
   margin-bottom: @margin-bottom;
   margin-left: @margin-left;
+}
+
+.align-left {
+  text-align: left;
 }
