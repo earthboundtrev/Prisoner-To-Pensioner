@@ -221,9 +221,7 @@ table {
     justify-content: space-between;
     align-items: center;
     flex-flow: row-reverse;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
     background-color: #a74949;
     padding: 15px;
   }
@@ -259,9 +257,7 @@ table {
     justify-content: space-between;
     align-items: center;
     flex-flow: row-reverse;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border: 1px solid black;
     background-color: #a74949;
     width: 100%;
     padding: 15px;
@@ -367,9 +363,7 @@ table {
   justify-content: space-between;
   align-items: center;
   flex-flow: row-reverse;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
   background-color: #a74949;
   padding: 15px;
 }
@@ -403,9 +397,7 @@ table {
   justify-content: space-between;
   align-items: center;
   flex-flow: row-reverse;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
   background-color: #a74949;
   width: 100%;
   padding: 15px;
@@ -834,24 +826,6 @@ p {
 }
 .social-media a:active {
   background-color: #666666;
-}
-.about-ray {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-dallas {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-aaron {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .p-formater p {
   font-size: 2.5rem;

@@ -16,10 +16,6 @@
     .media-button-styler(15px);
 }
 
-.trevor-flexer() {
-  .custom-flex(center, center);
-}
-
 .about-trevor() {
   margin-top: @ten-percent;
   margin-left: @quarter-percent;
@@ -28,6 +24,7 @@
 
   h3 {
     text-align: center;
+    margin-bottom: @five-percent;
   }
 
   @media @phones {
@@ -46,47 +43,8 @@
   }
 
 }
-.about-ray {
-  border: @small-button-border;
-  .custom-flex(center, center);
-}
-
-.about-dallas {
-  border: @small-button-border;
-  .custom-flex(center, center);
-}
-
-.about-aaron {
-  border: @small-button-border;
-  .custom-flex(center, center);
-}
-
-.body-pieces() {
-  .body-designer();
-  .adapted-h3();
-  .getWidth(@maximum-percent);
-
-  @media @phones {
-    .getWidth(@maximum-percent);
-    .adapted-h3();
-    .body-designer();
-  }
-
-  @media @tablets {
-    .adapted-h3();
-    .body-designer();
-    .getWidth(@maximum-percent);
-  }
-
-  @media @desktop {
-    .body-designer();
-    .getWidth(@quarter-percent);
-    .adapted-h3();
-  }
-}
 
 .img-display() {
-  .custom-flex(center, center);
   .getWidth(@maximum-percent);
 }
 
