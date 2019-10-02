@@ -15,6 +15,9 @@
 .align-left {
   text-align: left;
 }
+.whitespace-insert {
+  margin-top: 2%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,7 +152,7 @@ table {
   align-items: center;
   min-width: 100%;
   height: 10%;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   flex-flow: column-reverse;
 }
 .nav-container a {
@@ -185,7 +188,7 @@ table {
     justify-content: center;
     align-items: center;
     height: 10%;
-    background-color: #a74949;
+    background-color: #9F5F4F;
     flex-flow: column-reverse;
   }
   .nav-container a {
@@ -222,7 +225,7 @@ table {
     align-items: center;
     flex-flow: row-reverse;
     border: 1px solid black;
-    background-color: #a74949;
+    background-color: #9F5F4F;
     padding: 15px;
   }
   .nav-container a {
@@ -258,7 +261,7 @@ table {
     align-items: center;
     flex-flow: row-reverse;
     border: 1px solid black;
-    background-color: #a74949;
+    background-color: #9F5F4F;
     width: 100%;
     padding: 15px;
   }
@@ -286,17 +289,13 @@ table {
     font-weight: 600;
   }
 }
-.fixed-nav {
-  position: fixed;
-  top: 0;
-}
 .tiny-view {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 100%;
   height: 10%;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   flex-flow: column-reverse;
 }
 .tiny-view a {
@@ -330,7 +329,7 @@ table {
   justify-content: center;
   align-items: center;
   height: 10%;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   flex-flow: column-reverse;
 }
 .mobile-view a {
@@ -364,7 +363,7 @@ table {
   align-items: center;
   flex-flow: row-reverse;
   border: 1px solid black;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   padding: 15px;
 }
 .tablet-view a {
@@ -398,7 +397,7 @@ table {
   align-items: center;
   flex-flow: row-reverse;
   border: 1px solid black;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   width: 100%;
   padding: 15px;
 }
@@ -449,6 +448,8 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
 }
 p {
   font-size: 1.6rem;
@@ -669,7 +670,7 @@ p {
   align-items: center;
   min-width: 100%;
   height: 10%;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   padding: 15px;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -737,7 +738,7 @@ p {
   align-items: center;
   min-width: 100%;
   height: 10%;
-  background-color: #a74949;
+  background-color: #9F5F4F;
   padding: 15px;
 }
 .tiny-view-footer p {
@@ -805,6 +806,7 @@ p {
 }
 .body img {
   width: 100%;
+  margin-bottom: 2%;
 }
 .social-media a {
   text-decoration: none;
