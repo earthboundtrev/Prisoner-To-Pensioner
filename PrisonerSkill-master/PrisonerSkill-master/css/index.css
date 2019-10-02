@@ -12,9 +12,6 @@
   font-size: 3rem;
   text-shadow: 2px 2px black;
 }
-.align-left {
-  text-align: left;
-}
 .whitespace-insert {
   margin-top: 2%;
 }
@@ -150,6 +147,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   min-width: 100%;
   height: 10%;
   background-color: #9F5F4F;
@@ -187,6 +185,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     height: 10%;
     background-color: #9F5F4F;
     flex-flow: column-reverse;
@@ -223,6 +222,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     flex-flow: row-reverse;
     border: 1px solid black;
     background-color: #9F5F4F;
@@ -259,6 +259,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     flex-flow: row-reverse;
     border: 1px solid black;
     background-color: #9F5F4F;
@@ -293,6 +294,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   min-width: 100%;
   height: 10%;
   background-color: #9F5F4F;
@@ -328,6 +330,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   height: 10%;
   background-color: #9F5F4F;
   flex-flow: column-reverse;
@@ -361,6 +364,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   flex-flow: row-reverse;
   border: 1px solid black;
   background-color: #9F5F4F;
@@ -395,6 +399,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   flex-flow: row-reverse;
   border: 1px solid black;
   background-color: #9F5F4F;
@@ -466,6 +471,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-direction: column;
 }
 .container-header .intro {
@@ -492,6 +498,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     flex-direction: column;
   }
   .container-header .intro {
@@ -519,6 +526,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
   .container-header .intro {
     background: rgba(0, 0, 0, 0.7);
@@ -545,6 +553,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     flex-direction: column;
   }
   .container-header .intro {
@@ -571,6 +580,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-direction: column;
 }
 .tiny-view-header .intro {
@@ -596,6 +606,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-direction: column;
 }
 .phone-view-header .intro {
@@ -621,6 +632,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .tablet-view-header .intro {
   background: rgba(0, 0, 0, 0.7);
@@ -645,6 +657,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   flex-direction: column;
 }
 .desktop-view-header .intro {
@@ -668,6 +681,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   min-width: 100%;
   height: 10%;
   background-color: #9F5F4F;
@@ -736,6 +750,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   min-width: 100%;
   height: 10%;
   background-color: #9F5F4F;
@@ -799,6 +814,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-top: 5%;
 }
 .body h2 {
