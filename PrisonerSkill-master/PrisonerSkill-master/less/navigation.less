@@ -18,7 +18,7 @@
 }
 
 .tiny-view {
-  .custom-flex(center, center);
+  .custom-flex(center, center, row);
   min-width: @maximum-percent;
   height: @tenth-percent;
   background-color: @header-footer-color;
@@ -47,7 +47,7 @@
 }
 
 .mobile-view {
-  .custom-flex(center, center);
+  .custom-flex(center, center, row);
   height: @tenth-percent;
   background-color: @header-footer-color;
   flex-flow: column-reverse;
@@ -74,7 +74,7 @@
 }
 
 .tablet-view {
-  .custom-flex(space-between, center);
+  .custom-flex(space-between, center, row);
   flex-flow: row-reverse;
   .navigation-border();
   background-color: @header-footer-color;
@@ -89,7 +89,7 @@
 }
 
 .desktop-view {
-  .custom-flex(space-between, center);
+  .custom-flex(space-between, center, row);
   flex-flow: row-reverse;
   .navigation-border();
   background-color: @header-footer-color;
