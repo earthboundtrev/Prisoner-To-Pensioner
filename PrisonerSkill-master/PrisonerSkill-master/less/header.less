@@ -1,7 +1,7 @@
 //HEADER MIXINS
 
 .tiny-view-header {
-  width: @maximum-percent;
+  .getWidth(@maximum-percent);
   height: @over-half-percent;
   .custom-flex(center, center, row);
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .phone-view-header {
-  width: @maximum-percent;
+  .getWidth(@maximum-percent);
   height: @over-half-percent;
   .custom-flex(center, center, row);
   flex-direction: column;
@@ -41,7 +41,7 @@
 // HEADER MIXINS
 
 .tablet-view-header {
-  width: @maximum-percent;
+  .getWidth(@maximum-percent);
   height: @over-half-percent;
   .custom-flex(center, center, row);
 
@@ -59,7 +59,7 @@
 }
 
 .desktop-view-header {
-  width: @maximum-percent;
+  .getWidth(@maximum-percent);
   height: @over-half-percent;
   .custom-flex(center, center, row);
   flex-direction: column;

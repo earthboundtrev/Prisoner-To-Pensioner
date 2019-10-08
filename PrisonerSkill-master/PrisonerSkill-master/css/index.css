@@ -15,6 +15,9 @@
 .whitespace-insert {
   margin-top: 2%;
 }
+.text-enlarger p {
+  font-size: 3.5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -234,7 +237,7 @@ table {
     font-weight: 700;
     font-size: 2.5rem;
     background-color: #FFFFFF;
-    padding: 10px;
+    padding: 2%;
     margin-right: 15%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -376,7 +379,7 @@ table {
   font-weight: 700;
   font-size: 2.5rem;
   background-color: #FFFFFF;
-  padding: 10px;
+  padding: 2%;
   margin-right: 15%;
   margin-top: 15px;
   margin-bottom: 15px;

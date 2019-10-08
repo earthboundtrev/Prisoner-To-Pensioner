@@ -20,61 +20,67 @@
 }
 
 .navigation-border() {
-   border: @small-button-border;
+  border: @small-button-border;
 }
 
 .media-button-styler(@padding) {
-    a {
-        text-decoration: none;
-        color: @default-txt-color;
-        font-weight: 700;
-        font-size: 2.5rem;
-        background-color: @bg-color;
-        padding: @padding;
-        margin-right: @fifteen-percent;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border: 1px solid black;
-        border-radius: 15%;
-        transition: 0.25s;
-        &:hover {
-          background-color: black;
-          color: @white;
-        }
-        &:active {
-          background-color: @logo-font-color;
-        }
-      }
+  a {
+    text-decoration: none;
+    color: @default-txt-color;
+    font-weight: 700;
+    font-size: 2.5rem;
+    background-color: @bg-color;
+    padding: @padding;
+    margin-right: @fifteen-percent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 15%;
+    transition: 0.25s;
+    &:hover {
+      background-color: black;
+      color: @white;
+    }
+    &:active {
+      background-color: @logo-font-color;
+    }
+  }
 }
 
-.header-h1-mixin {    
-    text-align: center;
-    color: @lighter-gray;
-    font-weight: 700;
-    font-size: 4rem;
-    margin-top: 5px;    
+.header-h1-mixin {
+  text-align: center;
+  color: @lighter-gray;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 5px;
 }
 
 .header-p-mixin {
-    text-align: center;
-    color: @darker-gray;
-    font-weight: 700;
-    font-size: 3rem;
-    text-shadow: 2px 2px black;
+  text-align: center;
+  color: @darker-gray;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px black;
 }
 
 .a-mixin(@color) {
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 5px;
-    padding: 3px 5px 3px 5px;
-    padding-bottom: @two-percent;
-    color: @color;
-    background-color: @bg-color;
-    border: @small-button-border;
-    border-radius: 5px;
-    font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 3px 5px 3px 5px;
+  padding-bottom: @two-percent;
+  color: @color;
+  background-color: @bg-color;
+  border: @small-button-border;
+  border-radius: 5px;
+  font-weight: 700;
 }
 .whitespace-insert {
   margin-top: @two-percent;
+}
+
+.text-enlarger {
+  p {
+    font-size: 3.5rem;
+  }
 }
